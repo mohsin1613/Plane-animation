@@ -48,7 +48,7 @@
     width: 100%;
     background-image: url(city1.png);
     position: absolute;
-    left: 0;
+    left: -100px;
     bottom:0;
     right: 0;
     display: block;
