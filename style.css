@@ -27,8 +27,8 @@
 }
 
 .plane img{
-    width: 250px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     animation: animate 10s linear infinite;
 }
 @keyframes animate{
