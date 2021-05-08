@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(night.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.plane{
+    height: 250px;
+    width:100%;
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 50%;
+   z-index: 1;
+   transform: translateX(-30%);
+}
+
+.plane img{
+    width: 250px;
+    height: 150px;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate{
+     20%{
+        transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(2000px);
+    }
+    0%{
+        transform: translateY(100px);
+    }
+}
+
+.city{
+    height:290px;
+    width: 100%;
+    background-image: url(city1.png);
+    position: absolute;
+    left: 0;
+    bottom:0;
+    right: 0;
+    display: block;
+    background-repeat: repeat-x;
+    animation: city 60s linear infinite;
+}
+
+@keyframes city{
+    100%{
+        transform: translateX(-1000px);
+    }
+    80%{
+        transform:translateX(250px)
+    }
+
+}
+.bird{
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    z-index: 2;
+    left:10%;
+    bottom:40%;
+
+}
+
+.bird img{
+    width: 250px;
+    height: 200px;
+    animation: bird 12s linear infinite;
+}
+
+@keyframes bird{
+    0%{
+        transform: translateY(100px);
+    }
+    50%{
+        transform: translateY(-230px);
+    }
+    800%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateX(1200px);
+    }
+
+}
